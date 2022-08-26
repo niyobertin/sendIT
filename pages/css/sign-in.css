@@ -1,0 +1,99 @@
+body {
+    /* background-color: rgb(79, 83, 84); */
+    margin: 0px;
+    padding: 0px;
+}
+
+#conteiner {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+fieldset {
+    height: auto;
+    width: auto;
+    margin: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5%;
+}
+
+#lname,
+#fname {
+    width: 25em;
+    padding: 5px;
+    border-radius: 5%;
+}
+
+#email,
+#gender {
+    width: 28em;
+    padding: 5px;
+    border-radius: 5%;
+}
+
+#password,
+#password1,
+#password2 {
+    width: 20em;
+    padding: 5px;
+    border-radius: 5%;
+}
+
+#password-sigin {
+    width: 26em;
+    padding: 5px;
+    border-radius: 5%;
+}
+
+#sign-in,
+#rest {
+    background-color: brown;
+    width: 15em;
+    padding: 16px;
+    border-radius: 45%;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+    color: yellow;
+}
+
+#sign-in:hover {
+    background-color: rgb(3, 110, 26);
+    color: white;
+}
+
+#rest:hover {
+    background-color: rgb(3, 110, 26);
+    color: white;
+}
+
+#link {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+#link a {
+    text-decoration: none;
+    color: black;
+}
+
+#link a:hover {
+    color: brown;
+    cursor: pointer;
+}
+
+#feedback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+    font-size: large;
+}
