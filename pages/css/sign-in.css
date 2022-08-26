@@ -97,3 +97,101 @@ fieldset {
     font-weight: 200;
     font-size: large;
 }
+
+/* parcel order css */
+#create-order {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#conteine-create-order {
+    /* background-color: aqua; */
+    margin-left: 30px;
+    margin-right: 30px;
+    align-items: center;
+    height: auto;
+}
+
+#input {
+    /* background-color: blue; */
+    width: 50%;
+    margin-left: 30px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#feedback-parcel {
+    /* background-color: blueviolet; */
+    width: 50%;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 30px;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    align-items: center;
+}
+
+#titel {
+    align-items: center;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#create {
+    background-color: brown;
+    width: 15em;
+    padding: 16px;
+    border-radius: 45%;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+    color: yellow;
+    align-items: center;
+    text-align: center;
+}
+
+#crateparicer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#create:hover {
+    background-color: rgb(3, 110, 26);
+    color: white;
+}
+
+#productName {
+    width: 26em;
+    padding: 5px;
+    border-radius: 5%;
+}
+
+#price {
+    width: 32em;
+    padding: 5px;
+    border-radius: 5%;
+}
+
+#pickup-location {
+    width: 25.3em;
+    padding: 5px;
+    border-radius: 5%;
+}
+
+#destination {
+    width: 27.5em;
+    padding: 5px;
+    border-radius: 5%;
+}
+
+#phonenumber {
+    width: 20em;
+    padding: 5px;
+    border-radius: 5%;
+}
