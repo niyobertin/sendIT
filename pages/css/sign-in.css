@@ -612,7 +612,8 @@ making my web responsive */
     #gender,
     #email,
     #password1,
-    #password2 {
+    #password2,
+    #password-sigin {
         width: auto;
     }
 
