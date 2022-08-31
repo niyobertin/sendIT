@@ -104,6 +104,7 @@ fieldset {
 #create-order {
     display: flex;
     justify-content: space-between;
+    height: auto;
 
 }
 
@@ -162,6 +163,8 @@ fieldset {
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: auto;
+
 }
 
 #create,
@@ -296,4 +299,85 @@ fieldset {
     height: auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
+}
+
+/* home page disign */
+#header-section {
+    padding: 20px;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#links a {
+    justify-content: space-between;
+    margin: 20px;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    margin-right: 30px;
+    color: rgb(16, 13, 15);
+}
+
+#links a:hover {
+    color: rgb(181, 8, 129);
+}
+
+#logo {
+    margin-left: 30px;
+    height: 6em;
+    display: flex;
+    border-radius: 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+#logo img {
+    border-radius: 25%;
+}
+
+#body-section {
+    height: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+#pragraphs {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 15em;
+    margin-right: 15em;
+    font-size: larger;
+    padding: 15%;
+}
+
+footer {
+    background-color: rgb(24, 26, 26);
+    color: aliceblue;
+    height: 30vh;
+}
+
+#footer-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: larger;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul li {
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+#copy {
+    text-align: end;
+    margin: 30px;
 }
