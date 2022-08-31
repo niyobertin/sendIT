@@ -336,6 +336,12 @@ fieldset {
     font-weight: bold;
 }
 
+#menu_list img {
+    margin-left: 30px;
+    height: 3em;
+    display: none;
+}
+
 #logo img {
     border-radius: 25%;
 }
@@ -371,6 +377,10 @@ footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+#footer-section h2 {
+    color: yellow;
+}
+
 ul li {
     margin: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -380,4 +390,234 @@ ul li {
 #copy {
     text-align: end;
     margin: 30px;
+}
+
+
+/* 
+making my web responsive */
+
+@media screen and (max-width: 800px) {
+    #header-section {
+        background-color: aquamarine;
+        width: auto;
+        display: block;
+        height: auto;
+        font-size: medium;
+        font-weight: 200;
+    }
+
+    #logo {
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+        justify-content: space-between;
+    }
+
+    #logo img {
+        height: 5em;
+        display: flex;
+        width: 5em;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #doit {
+        font-size: small;
+        font-weight: 300;
+    }
+
+    #links a {
+
+        display: none;
+        text-align: end;
+
+    }
+
+    #menu_list img {
+        height: 2em;
+        display: flex;
+        width: 3em;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #body-section {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+        display: block;
+    }
+
+    #details-all {
+        width: auto;
+        font-size: smaller;
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    h1 {
+        font-size: larger;
+    }
+
+    #details-all h2 {
+        font-size: smaller;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #body-section h1 {
+        font-size: larger;
+    }
+
+    #pragraphs {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+        padding: 0px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    footer {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    #footer-section {
+        display: block;
+        margin: 10px;
+    }
+
+    #footer-section h2 {
+        font-size: larger;
+        color: yellow;
+    }
+
+    #conteiner {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #form {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        font-size: large;
+    }
+
+    #conteiner h2 {
+        font-size: large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #change-destination-feedback {
+        font-size: 0.8em;
+        font-weight: 100;
+    }
+
+    #conteine-create-order {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #conteine-create-order h2 {
+        font-size: large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #create-order {
+        display: block;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    #productName,
+    #phonenumber {
+        width: 20em;
+        padding: 0px;
+        border-radius: 5%;
+    }
+
+    #price,
+    #createdat {
+        width: 20em;
+        padding: 0px;
+        border-radius: 5%;
+    }
+
+    #pickup-location,
+    #destination {
+        width: 20em;
+        padding: 0px;
+        border-radius: 5%;
+    }
+
+    #feedback-parcel-order {
+        font-size: large;
+        padding: 0px;
+        margin: 0px;
+
+
+    }
+
+    #feedback-parcel {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #details {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        font-size: small;
+    }
+
+    #details h2 {
+        font-size: large;
+    }
+
+    #cancel1,
+    #confirm1 {
+        height: 2vh;
+        width: 10vh;
+        display: flex;
+        justify-content: center;
+        font-size: small;
+        padding: 5px;
+        border-radius: 25%;
+    }
+
+    #cancer-order {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #fname,
+    #lname,
+    #gender,
+    #email,
+    #password1,
+    #password2 {
+        width: auto;
+    }
+
+    fieldset {
+        padding: 0px;
+        margin: 0px;
+    }
 }
