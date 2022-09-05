@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/niyobertin/sendIT#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.2",
     "esm": "^3.2.25",
     "express": "^4.18.1",
@@ -30,5 +31,6 @@
     "@babel/core": "^7.18.13",
     "@babel/preset-env": "^7.18.10",
     "nodemon": "^2.0.19"
-  }
+  },
+  "keywords": []
 }

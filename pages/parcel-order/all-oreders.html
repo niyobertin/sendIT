@@ -11,7 +11,7 @@ iii. See the details of a parcel delivery order such as the pickup location, des
     <title>SendIT-parsecel order details</title>
 </head>
 
-<body>
+<body onload="getAllParcels()">
     <header>
         <div id="header-section">
             <div id="logo">
@@ -33,35 +33,28 @@ iii. See the details of a parcel delivery order such as the pickup location, des
             </div>
         </div>
     </header>
-    <h1 style="text-align: center;"> Details of all parcel delivery order you had created</h1>
+    <h1 style="text-align: center;"> All parcel delivery order you had created</h1>
     <div id="details-all">
         <div id="id">
             <h2>Product ID</h2>
-            <p>123</p>
         </div>
         <div id="pname">
             <h2>Product Name</h2>
-            <p>laptop</p>
         </div>
         <div id="pprice">
             <h2>price</h2>
-            <p>$400</p>
         </div>
         <div id="plocation">
             <h2>Pickup Location</h2>
-            <p>Kigali</p>
         </div>
         <div id="pdestination">
             <h2>Destination</h2>
-            <p>musanze</p>
         </div>
         <div id="pphone">
             <h2>Ouner contacts</h2>
-            <p>+250783021801</p>
         </div>
         <div id="date">
             <h2>Created at</h2>
-            <p>26/sept/2022</p>
         </div>
     </div>
     <!-- <div id="cancer-order">
@@ -102,6 +95,7 @@ iii. See the details of a parcel delivery order such as the pickup location, des
             <p>&copy; Niyonkuru Bertin 2022</p>
         </div>
     </footer>
+    <script src="../../Font-end-and-back-end-connection/index.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 const parcels = [
     {
         id: 1,
-        productNmae: "laptop",
+        productName: "laptop",
         price: "$400",
         pickupLocation: "Kigali",
         destination: "Musanze",
@@ -18,7 +18,7 @@ const parcels = [
         createdAt: "01/sep/2022"
     },
     {
-        id: 2,
+        id: 3,
         productName: "printer",
         price: "$400",
         pickupLocation: "Kigali",
