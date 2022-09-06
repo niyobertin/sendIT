@@ -4,7 +4,9 @@ const users = [{
     lastName: "Bertin",
     gender: "Male",
     email: "niyonkurubbertin@gmail.com",
-    phone: "0783021801"
+    phone: "0783021801",
+    password1: "12345",
+    password2: "12345"
 },
 {
     id: 2,
@@ -12,7 +14,9 @@ const users = [{
     lastName: "Aline",
     gender: "Female",
     email: "nikuze@gmail.com",
-    phone: "0789869440"
+    phone: "0789869440",
+    password1: "23455",
+    password2: "23455"
 }
 ];
 
