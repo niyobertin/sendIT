@@ -6,10 +6,15 @@ const getUsers = (req, res) => {
 }
 // create user
 const addUsers = (req, res) => {
-    const { firstName, lastName, gender, email, phone } = req.body;
-    const newUser = { id: users.length + 1, firstName, lastName, gender, email, phone };
-    users.push(newUser);
-    res.send(`User created with id ${newUser.id}`);
+    const { firstName, lastName, gender, email, phonenumber, password1, password2 } = req.body;
+    const newUser = { id: users.length + 1, firstName, lastName, gender, email, phonenumber, password1, password2 };
+    const mail = users.find(user => user.email === newUser.email)
+    if (mail) {
+        res.send(`Email provided, was alredy used to create anccount!`)
+    } else {
+        users.push(newUser);
+    }
+    res.send(`Hi ${newUser.firstName},your account is ready now you can sign in`);
 }
 //Fetch all parcel delivery orders by a specific user
 const getUserParcels = (req, res) => {

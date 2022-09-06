@@ -49,16 +49,18 @@
                 <label for="email">Email :</label>
                 <input type="email" placeholder="example@gmail/yohoo.com" id="email"
                     class="width-auto"><br /><br /><br />
+                <label for="phone">Phone number :</label>
+                <input type="text" placeholder="07867...." id="phone" class="width-auto"><br /><br /><br />
                 <p></p>
-                <label for="password1">Creat new Password:</label>
+                <label for="password1">Creat Password:</label>
                 <input type="password" placeholder="create new password" id="password1"
                     class="width-auto"><br /><br /><br />
                 <label for="password2">Confirm Password :</label>
                 <input type="password" placeholder="Re-type password" id="password2"
                     class="width-auto"><br /><br /><br />
-
-                <button type="button" id="sign-in"> Sign up</button>
-                <p id="feedback">feedback</p>
+                <p id="erro"></p>
+                <button type="button" id="sign-in" onclick="signUp ()" oninput="signUp ()"> Sign up</button>
+                <p id="feedback"></p>
                 <div id="link">
                     <a href="./sign-in.html">Sign in?</a>
                 </div>
@@ -95,6 +97,7 @@
             <p>&copy; Niyonkuru Bertin 2022</p>
         </div>
     </footer>
+    <script src="/Font-end-and-back-end-connection/index.js"></script>
 </body>
 
 </html>

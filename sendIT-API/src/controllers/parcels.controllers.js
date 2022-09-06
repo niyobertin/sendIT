@@ -8,7 +8,7 @@ const getParcels = (req, res) => {
 const getParcel = (req, res) => {
     const id = parseInt(req.params.id);
     const parcel = parcels.find((parcel) => parcel.id === id);
-    //tesint if parcel is found
+    //testing if parcel is found
     if (!parcel) {
         res.sendStatus(404);
     } else {
