@@ -18,30 +18,40 @@ const getParcel = (req, res) => {
 //create a parcel order.
 const addParcel = (req, res) => {
     const { productNmae, price, pickupLocation, destination, ounerPhone, createdAt } = req.body;
-    const newParcel = { id: parcels.length + 1, productNmae, price, pickupLocation, destination, ounerPhone, createdAt };
+    const newParcel = { id: parcels.length + 1, productNmae, price, pickupLocation, destination, ounerPhone, createdAt, parcelsStatus: true };
     parcels.push(newParcel);
     res.send(`New parcel created with id ${newParcel.id}`)
 }
 //cancel parcel order
-const concelParcel = (req, res) => {
+const cancelparcel = (req, res) => {
     const parcelId = parseInt(req.params.id);
     const parcelToCancel = parcels.find((parcel) => parcel.id === parcelId)
-    const { productName, price, pickupLocation, destination, ounerPhone, createdAt } = req.body;
-
-    const conceledParcel = {
-        productName: productName || parcelToCancel.productName,
-        price: price || parcelToCancel.price,
-        pickupLocation: pickupLocation || parcelToCancel.pickupLocation,
-        destination: destination || parcelToCancel.destination,
-        ounerPhone: ounerPhone || parcelToCancel.ounerPhone,
-        createdAt: createdAt || parcelToCancel.createdAt
+    if (parcelToCancel) {
+        parcelToCancel.parcelsStatus = false;
+        res.send('Parcel canceled!!')
     }
-    res.send("product canceled")
+    res.send('Parcel Not found!!')
+}
+// change parcel destination
+function changeDestination(req, res) {
+    const parcelId = parseInt(req.params.id);
+    const { destination } = req.body;
+    const parcelToUpdate = parcels.find((parcel) => parcel.id === parcelId)
+    if (parcelToUpdate) {
+        const newParcel = {
+            destination: destination || parcelToUpdate.destination
+        }
+        res.send(newParcel)
+    } else {
+        console.error()
+    }
+    res.end(newParcel);
 }
 
 export default {
     getParcels,
     getParcel,
     addParcel,
-    concelParcel,
+    cancelparcel,
+    changeDestination,
 }

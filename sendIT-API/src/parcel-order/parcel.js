@@ -6,7 +6,8 @@ const parcels = [
         pickupLocation: "Kigali",
         destination: "Musanze",
         ounerPhone: "0783021801",
-        createdAt: "01/sep/2022"
+        createdAt: "01/sep/2022",
+        parcelsStatus: true
     },
     {
         id: 2,
@@ -15,7 +16,8 @@ const parcels = [
         pickupLocation: "Kigali",
         destination: "Musanze",
         ounerPhone: "0783021801",
-        createdAt: "01/sep/2022"
+        createdAt: "01/sep/2022",
+        parcelsStatus: true
     },
     {
         id: 3,
@@ -24,7 +26,8 @@ const parcels = [
         pickupLocation: "Kigali",
         destination: "Musanze",
         ounerPhone: "0789869440",
-        createdAt: "01/sep/2022"
+        createdAt: "01/sep/2022",
+        parcelsStatus: true
     }
 ]
 
