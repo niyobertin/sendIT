@@ -29,7 +29,8 @@
                 <!-- <a href="">About</a> -->
                 <a href="./create-parcel-delvery-order.html">Give order</a>
                 <a href="./change-destination.html">Change destination</a>
-                <a href="./details.html">View order</a>
+                <a href="./all-oreders.html">View All orders</a>
+                <a href="../index.html">Log out</a>
             </div>
         </div>
     </header>
@@ -41,6 +42,10 @@
             <fieldset>
                 <legend></legend>
                 <p></p>
+                <label for="id"> Parcel id to change destination:</label>
+                <input type="number" placeholder="id" id="iddestination"><br /><br /><br />
+                <p></p>
+                <p></p>
                 <label for="email">Corrent destination:</label>
                 <input type="email" placeholder="current-destination" id="current-destination"><br /><br /><br />
                 <p></p>
@@ -48,8 +53,8 @@
                 <input type="new-destination" placeholder="new-destination" id="new-destination"><br /><br /><br />
                 <br /><br /><br />
                 <br /><br /><br />
-                <button type="button" id="change"> change</button>
-                <p id="change-destination-feedback">feedback</p>
+                <button type="button" id="change" onclick="changeDestination()"> change</button>
+                <p id="change-destination-feedback"></p>
                 <!-- <div id="link">
                     <a href="./resert-password.html">Forgot password?</a>
                     <a href="./sign-up.html">Need an account? Sign up</a>
@@ -87,6 +92,7 @@
             <p>&copy; Niyonkuru Bertin 2022</p>
         </div>
     </footer>
+    <script src="../../Font-end-and-back-end-connection/index.js"></script>
 </body>
 
 </html>

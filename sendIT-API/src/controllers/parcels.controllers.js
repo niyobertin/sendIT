@@ -17,8 +17,8 @@ const getParcel = (req, res) => {
 }
 //create a parcel order.
 const addParcel = (req, res) => {
-    const { productNmae, price, pickupLocation, destination, ounerPhone, createdAt } = req.body;
-    const newParcel = { id: parcels.length + 1, productNmae, price, pickupLocation, destination, ounerPhone, createdAt };
+    const { productName, price, pickupLocation, destination, ounerPhone } = req.body;
+    const newParcel = { id: parcels.length + 1, productName, price, pickupLocation, destination, ounerPhone, createdAt: new Date(), status: true };
     parcels.push(newParcel);
     res.send(`New parcel created with id ${newParcel.id}`)
 }
@@ -26,17 +26,29 @@ const addParcel = (req, res) => {
 const concelParcel = (req, res) => {
     const parcelId = parseInt(req.params.id);
     const parcelToCancel = parcels.find((parcel) => parcel.id === parcelId)
-    const { productName, price, pickupLocation, destination, ounerPhone, createdAt } = req.body;
-
-    const conceledParcel = {
-        productName: productName || parcelToCancel.productName,
-        price: price || parcelToCancel.price,
-        pickupLocation: pickupLocation || parcelToCancel.pickupLocation,
-        destination: destination || parcelToCancel.destination,
-        ounerPhone: ounerPhone || parcelToCancel.ounerPhone,
-        createdAt: createdAt || parcelToCancel.createdAt
+    if (parcelToCancel) {
+        const canceledParcel = {
+            status: false
+        }
+        res.send(canceledParcel);
+    } else {
+        res.sendStatus(404);
     }
-    res.send("product canceled")
+
+}
+const changeDestination = (req, res) => {
+    const parcelId = parseInt(req.params.id);
+    const parcelDestinationTochange = parcels.find((parcel) => parcel.id === parcelId)
+    const { destination } = req.body;
+    if (parcelDestinationTochange) {
+        const nedDestination = {
+            destination: destination || parcelDestinationTochange.destination
+        }
+        res.send(nedDestination);
+    } else {
+        res.sendStatus(404);
+    }
+
 }
 
 export default {
@@ -44,4 +56,5 @@ export default {
     getParcel,
     addParcel,
     concelParcel,
+    changeDestination,
 }

@@ -6,7 +6,8 @@ const router = express.Router();
 router.get('/parcels', parcelsControllers.getParcels);
 router.get("/parcels/:id", parcelsControllers.getParcel);
 router.post("/parcels", parcelsControllers.addParcel);
-router.put("/parcels/:id", parcelsControllers.concelParcel);
+router.put("/parcels/:id/cancel", parcelsControllers.concelParcel);
+router.put('/parcels/cangedestination/:id', parcelsControllers.changeDestination)
 //user routes 
 router.get('/users', usersControllers.getUsers);
 router.get('/users/:userId/parcels', usersControllers.getUserParcels)
