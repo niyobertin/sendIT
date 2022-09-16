@@ -392,6 +392,19 @@ ul li {
     margin: 30px;
 }
 
+/*user profile*/
+#profileAndDelivered {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+#listofParcels {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
 
 /* 
 making my web responsive */

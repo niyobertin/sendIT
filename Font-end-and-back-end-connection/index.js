@@ -199,6 +199,7 @@ const createParcel = () => {
 }
 
 // User connection backend - frontend
+//user sign-up
 const signUp = () => {
     const firstName = document.getElementById('fname').value;
     const lastName = document.getElementById('lname').value;
@@ -265,10 +266,36 @@ const signIn = () => {
                 feedback_signIn.innerHTML = "Email or password is invalid!";
                 feedback_signIn.style.color = 'red';
             }
-            console.log(usersVelify.firstName)
         })
         .catch(err => {
             feedback_signIn.innerHTML = "Email or password is invalid!";
             feedback_signIn.style.color = 'red';
+        });
+}
+
+//User profile
+// fail
+const userProfile = () => {
+    const names = document.getElementById("names");
+    const gender = document.getElementById("gender");
+    const email = document.getElementById('mail');
+    const phone = document.getElementById('fone');
+    const delvedParcel = document.getElementById('number');
+    const intransitParcel = document.getElementById('num');
+
+    fetch('http://localhost:8000/api/users', {
+        method: "GET",
+        headers: { "Content-type": "application/json;charset=UTF-8" }
+    })
+        .then(response => response.json())
+        .then(users => {
+            const userId = users.id
+            const userProfile = users.find(user => user.id === userId);
+            if (userProfile) {
+                names.innerHTML = `${userProfile.firstName} ${userProfile.lastName}`
+            }
+        })
+        .catch(err => {
+            console.log(err)
         });
 }

@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../pages/css/sign-in.css">
-    <title>SentIT-Home</title>
+    <link rel="stylesheet" href="../css/sign-in.css">
+    <title>sendIT-my profile</title>
 </head>
 
-<body>
+<body onload="userProfile()">
     <header>
         <div id="header-section">
             <div id="logo">
-                <img src="../images/Screen Shot 2022-08-31 at 10.21.41.png" alt="logo image" srcset="">
+                <img src="../../images/Screen Shot 2022-08-31 at 10.21.41.png" alt="logo image" srcset="">
                 <div id="doit">
                     <h3>Delivering your product,</h3>
                     <h3>is Our Promise </h3>
@@ -25,31 +25,39 @@
             <div id="links">
                 <a href="/home.html">Home</a>
                 <!-- <a href="">About</a> -->
-                <a href="./pages/parcel-order/create-parcel-delvery-order.html">Give order</a>
-                <a href="./pages/parcel-order/change-destination.html">Change destination</a>
-                <a href="./pages/parcel-order/all-oreders.html">View All orders</a>
-                <a href="./pages/user-profile/users-profile.html">Profile</a>
-                <a href="./pages/index.html">Log out</a>
+                <a href="../parcel-order/create-parcel-delvery-order.html">Give order</a>
+                <a href="../parcel-order/change-destination.html">Change destination</a>
+                <a href="../parcel-order/details.html">View order</a>
+                <a href="../user-profile/users-profile.html">Profile</a>
+                <a href="../index.html">Log out</a>
             </div>
         </div>
     </header>
-
     <main>
-        <div id="body-section">
-            <h1 id="heading1">Welcome to Send IT</h1>
-            <h2 id="heading2">Hello!!!</h2>
-            <div id="pragraphs">
-
-                <p>Preparations are underway for Rwanda’s first digital census of people with disability, whose results
-                    will
-                    be used to establish a national registry, The New Times has learnt.
-
-                    The traditional data collection with pen and paper made it impossible to have a national database of
-                    disabilities, their causes and the challenges disabled people face, officials said.
-
-                    The census will cost $1 million (over Rwf1 billion), and 60 per cent of it will be spent on data
-                </p>
+        <!-- User profile identification  -->
+        <div id="profileAndDelivered">
+            <div id="profile">
+                <h2>My profile</h2>
+                <b> Names:</b>
+                <p id="names"></p>
+                <b>Gender:</b>
+                <p id="gender"></p>
+                <b>Email:</b>
+                <p id="mail"></p>
+                <b>Tele:</b>
+                <p id="fone"></p>
             </div>
+            <div id="deliveredParcel">
+                <b>The number of parcel delivery order that has been delivered : </b>
+                <p id="number">12</p>
+                <dev id="num">
+                    <b>The number of parcel delivery orders that are yet to be delivered (in transit).</b>
+                    <p>20</p>
+                </dev>
+            </div>
+        </div>
+        <div id="listofParcels">
+            <h2>List of all parcel delivery orders.</h2>
         </div>
     </main>
 
@@ -73,15 +81,17 @@
             </div>
             <div id="service">
                 <h2>Service</h2>
+
                 Delivering product</br></br>
                 Storing</br></br>
+
             </div>
         </div>
         <div id="copy">
             <p>&copy; Niyonkuru Bertin 2022</p>
         </div>
     </footer>
-    <script src="./Font-end-and-back-end-connection/index.js"></script>
+    <script src="/Font-end-and-back-end-connection/index.js"></script>
 </body>
 
 </html>
