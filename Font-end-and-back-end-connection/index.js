@@ -13,8 +13,6 @@ function validate(item, erro) {
     return flag // to maintain state of flag
 
 }
-
-
 //defining valiables
 
 function defineValiable(items) {
